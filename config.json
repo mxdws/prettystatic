@@ -1,0 +1,18 @@
+{
+    "siteName": "Pretty Static",
+    "siteDescription": "A development blog - Python and Static Sites, and anything else nerdy.",
+    "outputDestination": "site",
+    "collections" : [
+        "pages",
+        "posts"
+    ],
+    "assets": {
+        "assetSource": "assets",
+        "assetDestination": "assets"
+    },
+    "sass": {
+        "sassFolder": "sass",
+        "sassOutput": "assets/css"
+    },
+    "dataFolder": "data"
+}

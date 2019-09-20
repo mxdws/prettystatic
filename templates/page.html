@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="page">
+    <div class="page-heading">
+        <h1 class="page-heading-title">{{ post.metadata['title'] }}</h1>
+    </div>
+    <div class="page-body">
+        {{ post.content }}
+    </div>
+</div>
+{% endblock %}
+            

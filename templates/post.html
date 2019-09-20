@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="post">
+    <div class="post-heading">
+        <h1 class="post-heading-title">{{ post.metadata['title'] }}</h1>
+        <p class="post-heading-subtitle">{{ post.metadata['excerpt'] }}</p>
+        <p class="post-heading-byline">{{ post.metadata['dateText'] }}</p>
+    </div>
+    <div class="post-body">
+        {{ post.content }}
+    </div>
+</div>
+{% endblock %}
+            

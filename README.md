@@ -1,2 +1,0 @@
-# prettystatic
-A Development Blog

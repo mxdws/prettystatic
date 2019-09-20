@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>Blog</h1>
+<p>Here is an archive list of all the posts on the blog:</p>
+{% for p in post %}
+<div class="post-list-item">
+    <h2><a href="/{{ p.permalink }}">{{ p.metadata['title'] }}</a></h2>
+    <h4>{{ p.metadata['dateText'] }}</h4>
+</div>
+{% endfor %}
+
+{% endblock %}
+            

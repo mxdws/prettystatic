@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% for p in post %}
+<div class="post-list-item">
+    <h4>{{ p.metadata['dateText'] }} by {{ p.metadata['author'] }}</h4>
+    <h2><a href="/{{ p.permalink }}">{{ p.metadata['title'] }}</a></h2>
+    <h3>{{ p.metadata['excerpt'] }}</h3>
+</div>
+{% endfor %}
+
+{% endblock %}
+            
