@@ -9,17 +9,21 @@
     <title>{{ post.title }}</title>
 </head>
 <body>
-    <header class="navbar">
-        <div class="title">
-            <h1><a href="/">{{ site.siteName }}</a></h1>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-logo">
+                    <h1><a href="/">{{ site.siteName }}</a></h1>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a class="nav-menu-item" href="/about">About</a></li>
+                        <li><a class="nav-menu-item" href="/blog">Blog</a></li>
+                        <li><a class="nav-menu-item" href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a class="nav-menu-item" href="/about">About</a></li>
-                <li><a class="nav-menu-item" href="/blog">Blog</a></li>
-                <li><a class="nav-menu-item" href="/contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         {% block content %} {% endblock %}
