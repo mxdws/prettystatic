@@ -7,7 +7,7 @@ dateText: 23rd September 2019
 author: Martin Dawson
 ---
 
-As of writing, it is 2019 and the buzzwords in the last year or two have been ‘JAMStack’ and 'serverless'. I too was transfixed by this concept when I first stumbled upon it, and the possibilities it offers are amazing. A big part of the JAMStack is the concept of everything being _serverless_ which appeals to me on many levels. The concept is deceptive in that there are still servers, but they are managed by other, more capable people, and I don’t have to get my hands dirty in the world of server management.
+As of writing, it is 2019 and the buzzwords in the last year or two have been ‘JAMStack’ and 'serverless'. I was transfixed by this concept when I first stumbled upon it, and the possibilities it offers are worthy of consideration. A big part of the JAMStack is the concept of everything being _serverless_ which appeals to me on many levels. The concept is deceptive in that there are still servers, but they are managed by other, more capable people, and I don’t have to get my hands dirty in the world of server management. It can, for example, make deployment of a static website so fast and trivial, that it blows away one of the hurdles that stand between some people and their digital aspirations.
 
 This is all well and good, but whilst the possibilities are continually expanding, depending on what your project is, you may need to spin up a server, make sure it’s secure, host your website or app on it. Incidentally I'm calling it a server which is synonymous with web host, but it's just a Linux machine, which has many other uses. The big advantage is that it is always on, so you can schedule jobs to run in it all day everyday, for data processing, or a development server, for example.
 
@@ -49,7 +49,7 @@ And then the host file can be updated to associate the updated host name with th
 
 and add a line with IP address and host name
     
-    178.79.177.137  serverless-server-1
+    111.22.333.444  serverless-server-1
 
 ## Setting up a limited user
 
@@ -78,7 +78,7 @@ On **local** computer generate keys
 
 … and copy the public one to the server
 
-    scp ~/.ssh/id_rsa.pub prettystatic@178.79.177.137:~/.ssh/authorized_keys
+    scp ~/.ssh/id_rsa.pub prettystatic@111.22.333.444:~/.ssh/authorized_keys
 
 Change some permissions on the server for the SSH
 
@@ -156,4 +156,6 @@ Set the firewall to accept the HTTP configuration seeing as this is a dev server
 
 Nginx sets the default server block to be served from `/var/www/html`
 
+## Conclusion
 
+This is not a comprehensive guide on how to manage and optimise servers, but it is hopefully enough to show what someone might need to do to get themselves a small, cheap server, set it up with some piece of mind around its security and use it for whatever purpose they need.
